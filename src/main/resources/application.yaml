@@ -1,0 +1,11 @@
+server:
+  servlet:
+    context-path: /api
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8888/realms/notificator
+          jwk-set-uri: http://localhost:8888/realms/notificator/protocol/openid-connect/certs
