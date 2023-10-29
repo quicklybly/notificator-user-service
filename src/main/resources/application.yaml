@@ -9,3 +9,7 @@ spring:
         jwt:
           issuer-uri: http://localhost:8888/realms/notificator
           jwk-set-uri: http://localhost:8888/realms/notificator/protocol/openid-connect/certs
+  kafka:
+    bootstrap-servers: localhost:9092
+    template:
+      default-topic: "alerts"
